@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a branch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Create a branch</h1>
+    <p>Choose a name and the branch to start from.</p>
+
+    <form>
+      <label for="branch-name">Branch name</label>
+      <input
+        id="branch-name"
+        name="branch-name"
+        type="text"
+        placeholder="feature/my-change"
+        required
+      >
+
+      <label for="base-branch">Create from</label>
+      <select id="base-branch" name="base-branch">
+        <option value="main">main</option>
+        <option value="develop">develop</option>
+      </select>
+
+      <button type="submit">Create branch</button>
+    </form>
+  </main>
+</body>
+</html>
